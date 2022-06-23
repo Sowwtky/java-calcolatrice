@@ -42,7 +42,18 @@ public class CalcoliHelper {
 		}
 	}
 	
-	
+	public static int potenza (int primoNumero, int secondoNumero) {
+		int potenza = 1;
+		if (primoNumero == 0 && secondoNumero == 0) { 
+			return 1;
+			
+		} else {
+			for (int i = 1; i <= secondoNumero; i++) {
+				potenza = potenza * primoNumero;
+			}
+			return potenza;
+		}
+	}
 	
 	//overload
 	
