@@ -11,7 +11,7 @@ public class Main {
 		System.out.println("Valore assoluto: " + CalcoliHelper.valoreAssoluto(-2));
 		System.out.println("Numero massimo: " + CalcoliHelper.numeroMassimo(30, 180));
 		System.out.println("Numero minimo: " + CalcoliHelper.numeroMinimo(29, 190));
-		System.out.println("Potenza: " + CalcoliHelper.potenza(3, 3));
+		System.out.println("Potenza: " + CalcoliHelper.potenza(3, -3));
 	}
 
 }

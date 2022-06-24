@@ -42,19 +42,29 @@ public class CalcoliHelper {
 		}
 	}
 	
-	public static int potenza (int primoNumero, int secondoNumero) {
-		int potenza = 1;
+	public static double potenza (int primoNumero, int secondoNumero) {
+		double potenza = 1;
+		double risultato = 1;
+		
 		if (primoNumero == 0 && secondoNumero == 0) { 
 			return 1;
+			
+		} else if (secondoNumero < 0) {
+			
+			for (int i = 1; i <= -secondoNumero; i++) {
+				potenza = potenza * primoNumero;
+				
+		}
+			risultato = 1/potenza;
+			return risultato;
 			
 		} else {
 			for (int i = 1; i <= secondoNumero; i++) {
 				potenza = potenza * primoNumero;
-			}
-			return potenza;
 		}
+			return potenza;
+	    }
 	}
-	
 	//overload
 	
 	public static double somma (double primoNumero, double secondoNumero) {
